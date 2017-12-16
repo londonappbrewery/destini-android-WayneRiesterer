@@ -11,8 +11,6 @@
     tools:context="com.londonappbrewery.destini.MainActivity"
     android:background="@drawable/background">
 
-
-
     <TextView
         android:id="@+id/storyTextView"
         android:text="@string/T1_Story"
@@ -24,34 +22,33 @@
         android:textColor="#ffffffff"/>
 
     <Button
-        android:id="@+id/buttonTop"
+        android:id="@+id/topButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/T1_Ans1"
         android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
         android:layout_marginBottom="61dp"
         android:background="#e74c3c"
+        android:onClick="onStoryPathSelected"
+        android:text="@string/T1_Ans1"
         android:textColor="#ecf0f1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:textSize="15sp"/>
+        android:textSize="15sp" />
 
     <Button
-        android:id="@+id/buttonBottom"
+        android:id="@+id/bottomButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/T1_Ans2"
+        android:layout_alignEnd="@+id/topButton"
+        android:layout_alignLeft="@+id/topButton"
         android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/buttonTop"
-        android:layout_alignStart="@+id/buttonTop"
-        android:layout_alignRight="@+id/buttonTop"
-        android:layout_alignEnd="@+id/buttonTop"
+        android:layout_alignRight="@+id/topButton"
+        android:layout_alignStart="@+id/topButton"
         android:background="#3498db"
+        android:onClick="onStoryPathSelected"
+        android:text="@string/T1_Ans2"
         android:textColor="#ecf0f1"
-        android:textSize="15sp"/>
-
-
-
+        android:textSize="15sp" />
 </RelativeLayout>
